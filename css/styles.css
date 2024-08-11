@@ -1,0 +1,361 @@
+/* Fonts */
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/roboto-v30-latin-100.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 100;
+  src: url("../fonts/roboto-v30-latin-100italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-v30-latin-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/roboto-v30-latin-300italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-v30-latin-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/roboto-v30-latin-900italic.woff2") format("woff2");
+}
+:root {
+  --color-brand: #2b7fff;
+  --primary-light: #ffffff;
+  --primary-dark: #011c44;
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--primary-dark);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Link */
+.header-link {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+.header-link:hover {
+  color: var(--color-brand);
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: silver;
+}
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 56px;
+}
+.header-icons {
+  display: flex;
+  gap: 32px;
+}
+.address-icon {
+  fill: var(--primary-light);
+}
+.address-icon:hover {
+  fill: var(--primary-dark);
+}
+
+/* Hero section */
+.hero {
+  background-image: url("../images/background-hero-section.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero h1 {
+  margin-bottom: 40px;
+  color: var(--color-brand);
+  font-family: "Play", sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 114px;
+  text-transform: capitalize;
+}
+.hero-container {
+  width: 530px;
+  height: 400px;
+  margin-left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.hero-text {
+  margin-bottom: 16px;
+}
+
+/* Button */
+.button {
+  width: 220px;
+  height: 50px;
+  margin-bottom: 14px;
+  color: var(--primary-light);
+  font-weight: 600;
+  background-color: var(--color-brand);
+  border: 2px solid var(--color-brand);
+  border-radius: 32px;
+}
+.button:hover {
+  color: var(--primary-dark);
+  background-color: var(--primary-light);
+}
+.button-text {
+  margin-left: 10px;
+  color: #4a4a4a;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* Clinic info section */
+.clinic-info-title {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74.05px;
+  margin-bottom: 40px;
+}
+.clinic-info-title span {
+  color: var(--color-brand);
+  text-transform: capitalize;
+}
+.clinic-info-text {
+  font-size: 22px;
+  line-height: 38px;
+  margin-bottom: 40px;
+}
+.clinic-info-text span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.clinic-info-container {
+  display: flex;
+  gap: 32px;
+}
+.clinic-info-data {
+  width: 650px;
+  height: 450px;
+  margin-top: 40px;
+}
+.clinic-info-photo {
+  width: 500px;
+  height: 710px;
+}
+.clinic-info-photo-02 {
+  margin: 40px 90px 0 160px;
+}
+
+/* Advantages section */
+.advantages-title {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74.05px;
+  width: 450px;
+  height: 150px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.advantages-title span {
+  color: var(--color-brand);
+}
+.advantages-text {
+  line-height: 24px;
+  display: flex;
+  gap: 56px;
+  margin-top: 0;
+  margin-bottom: 96px;
+}
+.advantages-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.advantages-card {
+  width: 320px;
+  height: 180px;
+  border: 1px solid black;
+  border-radius: 32px;
+  text-align: center;
+}
+.advantages-icon {
+  margin-top: 30px;
+  fill: var(--color-brand);
+}
+.advantages-icon-second {
+  margin-top: 25px;
+  fill: var(--color-brand);
+}
+
+/* Procedures section */
+.procedures-title {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74.05px;
+}
+.procedures-title span {
+  color: var(--color-brand);
+}
+
+/* Contacts section */
+.contacts-title {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74.05px;
+}
+.contacts-title span {
+  color: var(--color-brand);
+}
+
+/* Footer */
+footer {
+  background-color: #011f4a;
+}
+.footer-link {
+  color: var(--primary-light);
+  line-height: 18.75px;
+  text-decoration: none;
+}
+.address-link {
+  font-style: normal;
+  color: var(--primary-light);
+  font-size: 16px;
+  line-height: 18.75px;
+  text-decoration: none;
+}
+.address-link:hover {
+  color: var(--color-brand);
+  font-weight: 700;
+  text-decoration: underline;
+}
+.address-copyright {
+  color: #747272;
+  font-size: 13px;
+  line-height: 15.23px;
+  font-style: normal;
+}
