@@ -176,7 +176,7 @@ header {
   fill: var(--primary-light);
 }
 .address-icon:hover {
-  fill: var(--primary-dark);
+  fill: var(--color-brand);
 }
 
 /* Hero section */
@@ -311,35 +311,120 @@ header {
 }
 
 /* Procedures section */
+.procedures-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.procedures-list {
+  display: flex;
+  gap: 16px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  padding: 0;
+}
 .procedures-title {
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-size: 64px;
   line-height: 74.05px;
+  text-align: center;
+  margin-bottom: 48px;
 }
 .procedures-title span {
   color: var(--color-brand);
 }
 
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--primary-dark);
+  cursor: pointer;
+}
+.carousel-arrow {
+  fill: var(--primary-dark);
+}
+.carousel-button:hover {
+  background-color: var(--color-brand);
+}
+.carousel-button:hover .carousel-arrow {
+  fill: var(--primary-light);
+}
+
 /* Contacts section */
+.contacts-container {
+  display: flex;
+  gap: 32px;
+}
 .contacts-title {
   font-family: "Play", sans-serif;
   font-weight: 700;
   font-size: 64px;
   line-height: 74.05px;
+  text-align: center;
+  margin-top: 96px;
+  margin-bottom: 48px;
 }
 .contacts-title span {
   color: var(--color-brand);
 }
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
+  margin-left: 70px;
+  margin-bottom: 94px;
+}
 
 /* Footer */
 footer {
+  padding: 56px 100px;
   background-color: #011f4a;
+}
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-nav {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+}
+.footer-logo {
+  flex-grow: 1;
+}
+.footer-menu {
+  margin: 0;
+  flex-grow: 1;
+}
+.footer-address {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
 }
 .footer-link {
   color: var(--primary-light);
   line-height: 18.75px;
   text-decoration: none;
+}
+.footer-link:hover {
+  color: var(--color-brand);
+  text-decoration: underline;
+}
+.address-list {
+  margin: 0;
+  flex-grow: 1;
+}
+.address-info {
+  flex-grow: 1;
 }
 .address-link {
   font-style: normal;
@@ -350,7 +435,6 @@ footer {
 }
 .address-link:hover {
   color: var(--color-brand);
-  font-weight: 700;
   text-decoration: underline;
 }
 .address-copyright {
