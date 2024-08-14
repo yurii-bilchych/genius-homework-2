@@ -114,6 +114,9 @@
   --color-brand: #2b7fff;
   --primary-light: #ffffff;
   --primary-dark: #011c44;
+  --secondary-light: #747272;
+  --secondary-medium-dark: #4a4a4a;
+  --secondary-dark: #011f4a;
 }
 
 /* Base */
@@ -137,11 +140,17 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
+  margin: 0;
 }
 
 ul {
   list-style-type: none;
+}
+.container {
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 24px;
+  margin: 0 auto;
 }
 
 /* Link */
@@ -156,10 +165,11 @@ ul {
 
 /* Header */
 header {
-  background-color: silver;
+  background-color: silver; /* remove */
 }
 .header-nav {
   display: flex;
+  height: 106px;
   justify-content: space-around;
   align-items: center;
 }
@@ -187,7 +197,7 @@ header {
   background-size: cover;
 }
 .hero h1 {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   color: var(--color-brand);
   font-family: "Play", sans-serif;
   font-size: 140px;
@@ -196,21 +206,21 @@ header {
   text-transform: capitalize;
 }
 .hero-container {
-  width: 530px;
-  height: 400px;
+  width: 650px;
+  height: 440px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-left: 120px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.hero-text {
-  margin-bottom: 16px;
-}
 
 /* Button */
 .button {
   width: 220px;
-  height: 50px;
+  height: 53px;
+  padding: 16px 32px;
   margin-bottom: 14px;
   color: var(--primary-light);
   font-weight: 600;
@@ -224,7 +234,7 @@ header {
 }
 .button-text {
   margin-left: 10px;
-  color: #4a4a4a;
+  color: var(--secondary-medium-dark);
   font-size: 12px;
   line-height: 18px;
 }
@@ -235,7 +245,7 @@ header {
   font-weight: 700;
   font-size: 64px;
   line-height: 74.05px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 .clinic-info-title span {
   color: var(--color-brand);
@@ -244,7 +254,7 @@ header {
 .clinic-info-text {
   font-size: 22px;
   line-height: 38px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 .clinic-info-text span {
   font-weight: 600;
@@ -253,18 +263,20 @@ header {
 .clinic-info-container {
   display: flex;
   gap: 32px;
+  padding-top: 100px;
+  padding-bottom: 88px;
 }
 .clinic-info-data {
-  width: 650px;
-  height: 450px;
-  margin-top: 40px;
+  width: 710px;
+  height: 700px;
+  padding-top: 40px;
 }
 .clinic-info-photo {
   width: 500px;
   height: 710px;
 }
 .clinic-info-photo-02 {
-  margin: 40px 90px 0 160px;
+  margin: 40px 0 0 170px;
 }
 
 /* Advantages section */
@@ -274,8 +286,9 @@ header {
   font-size: 64px;
   line-height: 74.05px;
   width: 450px;
-  height: 150px;
-  margin-bottom: 48px;
+  height: 170px;
+  padding-bottom: 24px;
+  margin: 0;
   text-align: center;
 }
 .advantages-title span {
@@ -286,10 +299,12 @@ header {
   display: flex;
   gap: 56px;
   margin-top: 0;
-  margin-bottom: 96px;
+  padding-top: 24px;
+  margin-bottom: 48px;
 }
 .advantages-container {
   display: flex;
+  padding-top: 88px;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
@@ -300,6 +315,7 @@ header {
   border: 1px solid black;
   border-radius: 32px;
   text-align: center;
+  flex-wrap: wrap;
 }
 .advantages-icon {
   margin-top: 30px;
@@ -329,6 +345,7 @@ header {
   font-size: 64px;
   line-height: 74.05px;
   text-align: center;
+  margin-top: 48px;
   margin-bottom: 48px;
 }
 .procedures-title span {
@@ -370,8 +387,9 @@ header {
   font-size: 64px;
   line-height: 74.05px;
   text-align: center;
-  margin-top: 96px;
-  margin-bottom: 48px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin: 0;
 }
 .contacts-title span {
   color: var(--color-brand);
@@ -387,7 +405,7 @@ header {
 /* Footer */
 footer {
   padding: 56px 100px;
-  background-color: #011f4a;
+  background-color: var(--secondary-dark);
 }
 .footer-container {
   display: flex;
@@ -438,7 +456,7 @@ footer {
   text-decoration: underline;
 }
 .address-copyright {
-  color: #747272;
+  color: var(--secondary-light);
   font-size: 13px;
   line-height: 15.23px;
   font-style: normal;
